@@ -19,42 +19,63 @@
 		<div class="d-flex ">
   <div class="mb-3 mx-3 col-sm-4">
     <label for="first-name-input" class="form-label">First Name</label>
-    <input type="text" class="form-control" id="first-name-input" required>
+    <input type="text" id="first-name-input" class="form-control is-invalid "  aria-describedby="first-name-input-f" required>
+    <div id="first-name-input-f" class="invalid-feedback">
+      First name required!
     </div>
+  </div>
   <div class="mb-3 mx-3 col-sm-4">
     <label for="last-name-input" class="form-label">Last Name</label>
-    <input type="text" class="form-control" id="last-name-input" required>
+    <input type="text" class="form-control is-invalid" aria-describedby="last-name-input-f" id="last-name-input" required>
+	  <div id="last-name-input-f" class="invalid-feedback">
+      Last name required!
+    </div>
   </div>
 	<div class="mb-3 mx-3 col-sm-4">
     <label for="email-input" class="form-label">Email Address</label>
-    <input type="email" class="form-control" id="email-input" aria-describedby="emailHelp" required>
-  </div>
+    <input type="email" class="form-control is-invalid" aria-describedby="email-input" id="email-input" aria-describedby="emailHelp" required>
+ <div id="email-input-f" class="invalid-feedback">
+      email required!
+    </div>
+	</div>
 		</div>
 
 		<div class="d-flex ">
   <div class="mb-3 mx-3 col-sm-6">
     <label for="college-input" class="form-label">College</label>
-    <input type="text" class="form-control" id="college-input" required>
-    </div>
+    <input type="text" class="form-control is-invalid" id="college-input" aria-describedby="college-input-f" required>
+	  <div id="college-input-f" class="invalid-feedback">
+      Please provide a valid college
+    </div>  
+  </div>
   <div class="mb-3 mx-3 col-sm-3">
-    <label for="exampleInputPassword1" class="form-label">Graduation Year</label>
-    <select class="form-select" id="grad-year-select" aria-label="Default select example">
+    <label for="grad-year-select" class="form-label">Graduation Year</label>
+    <select class="form-select is-invalid" id="grad-year-select" aria-label="Default select example" aria-describedby="grad-year-select-f">
 		  <option value="0">2020</option>
 		  <option value="1">2021</option>
 		  <option value="2">2022</option>
 		  <option value="3">2023</option>
 	</select>
+	  <div id="grad-year-select-f" class="invalid-feedback">
+      First name required!
+    </div>
   </div>
 	<div class="mb-3 mx-3 col-sm-3">
     <label for="roll-no-input" class="form-label">Roll No.</label>
-    <input type="text" class="form-control" id="roll-no-input" required>
-  </div>
+    <input type="text" class="form-control is-invalid" id="roll-no-input" aria-describedby="roll-no-input-f" required>
+	  <div id="roll-no-input-f" class="invalid-feedback">
+      Please provide a valid Roll no.
+    </div>
+	</div>
 		</div>
 		
 	<div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="conditions-checkbox" required>
+    <input type="checkbox" class="form-check-input is-invalid" id="conditions-checkbox" aria-describedby="conditions-checkbox-f" required>
     <label class="form-check-label" for="conditions-checkbox">Agree to terms and conditions</label>
-  </div>
+	  <div id="conditions-checkbox-f" class="invalid-feedback">
+      You must agree before submitting
+    </div>
+	</div>
   <button type="submit" class="btn btn-primary">Submit form</button>
 </form>
 </body>
